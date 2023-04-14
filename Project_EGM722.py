@@ -7,7 +7,7 @@
 
 
 # this lets us use the figures interactively
-
+get_ipython().run_line_magic('matplotlib', 'inline')
 import os
 import pandas as pd
 import geopandas as gpd
@@ -18,7 +18,6 @@ import cartopy.crs as ccrs
 import matplotlib.patches as mpatches
 import matplotlib.lines as mlines
 from shapely.geometry import Point, LineString, Polygon
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 plt.ion() # make the plotting interactive
 
